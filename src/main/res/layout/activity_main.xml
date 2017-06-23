@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/up_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/input_ip_edittext"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="请输入ip" />
+        <Button
+            android:id="@+id/connect_main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接" />
+    </LinearLayout>
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_line"
+    android:layout_below="@+id/up_line"
+    android:id="@+id/listview_socket"/>
+
+    <!-- 底部-->
+    <LinearLayout
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/line_back"
+        android:orientation="horizontal">
+        <EditText
+            android:background="@null"
+            android:id="@+id/input_content_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:hint="请输入内容" />
+        <Button
+            android:id="@+id/send_main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="发送" />
+    </LinearLayout>
+
+
+</RelativeLayout>
